@@ -1,0 +1,158 @@
+/* 
+ * CSS for GRUV CSS Framework 
+ * author: Manu Febie
+ * */
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Source+Sans+Pro:wght@200&display=swap');
+
+
+
+/* Reset */
+
+* {
+    font-family: 'Inconsolata', monospace;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    letter-spacing: 1.2px;;
+}
+
+a {
+    color: #83a598;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 20px 0 15px;
+    color: #282828;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark h4,
+.bg-dark h5,
+.bg-dark h6 {
+    color: #ebdbb2;
+}
+
+/**************** Utils *******************/
+
+
+
+/* Buttons */
+
+
+/* Headings */
+
+.display-1 {
+    margin-bottom: 28px;
+    font-size: 52px;
+    font-weight: 800;
+}
+
+.lead {
+    font-size: 24px;
+}
+
+
+
+/* Text colors */
+
+.text-dark-red {color: #cc241d;}
+
+.text-dark-cyan {color: #689d6a;}
+
+
+/* Utils: background colors */
+
+.bg-primary {
+    background-color: #8ec07c;
+}
+
+.bg-dark {
+    background-color: #282828;
+    color: #ebdbb2;
+}
+
+
+
+/* Layout */
+
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+.section {
+    margin: 10px 0;
+}
+
+.hero .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 50px;
+    height: 100vh;
+}
+
+
+
+/* Components */
+
+.navbar {
+    display: flex;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+}
+
+.navbar a {
+    color: #ebdbb2;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: 1px #ebdbb2 solid;
+    width: 30px;
+}
+
+.navbar ul {
+    display: flex;
+    text-transform: uppercase;
+}
+
+.btn {
+    background-color: #689d6a;
+    color: #ebdbb2;
+    margin: 25px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 400;
+    border: none;
+}
+
+
+
+
