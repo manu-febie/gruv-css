@@ -1,158 +1,293 @@
-/* 
- * CSS for GRUV CSS Framework 
- * author: Manu Febie
- * */
-
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Source+Sans+Pro:wght@200&display=swap');
-
-
-
-/* Reset */
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&family=Mukta+Malar:wght@300&display=swap');
 
 * {
-    font-family: 'Inconsolata', monospace;
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
-html,
 body {
-    letter-spacing: 1.2px;;
-}
-
-a {
-    color: #83a598;
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6 {
-    font-family: 'Source Sans Pro', sans-serif;
-    padding: 20px 0 15px;
+    font-family: 'Mukta Malar', sans-serif;
+    font-size: 16px;
     color: #282828;
 }
 
-p {
-    margin-bottom: 15px;
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Squada One', cursive;
+    color: #282828;
+    margin: 10px 0;
+    font-weight: 300;
 }
 
-.bg-dark h1,
-.bg-dark h2,
-.bg-dark h3,
-.bg-dark h4,
-.bg-dark h5,
-.bg-dark h6 {
+p {
+    padding-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* Dark theme */
+
+.bg-dark {
+    background: #282828;
     color: #ebdbb2;
 }
 
-/**************** Utils *******************/
+.bg-dark .card {
+    background: #ebdbb2;
+    color: #282828;
+}
+
+.bg-dark .box {
+    border: 1px solid #ebdbb2;
+}
+
+.bg-dark .hero .hero-content .hero-title {
+    color: #ebdbb2;
+}
+
+
+/* General Styling */
+
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+.box {
+    border: 1px solid #282828;
+    margin: 0 5px 10px;
+    padding: 10px 15px;
+    text-align: center;
+    height: 100%;
+}
+
+.box-1 {
+    background: #282828;
+    color: #ebdbb2;
+}
+
+.box-2 {
+    background: #ebdbb2;
+    color: #282828;
+}
+
+.box-3 {
+    background: #98971a;
+    color: #282828;
+}
+
+.box-4 {
+   background: #b8bb26; 
+}
+
+.box-5 {
+    background: #d79921;
+}
+
+.box-6 {
+    background: #fabd2f;
+}
+
+.box-7 {
+    background: #458588;
+}
+
+.box-8 {
+    background: #83a588;
+}
+
+.box-9 {
+    background: #b16286;
+}
+
+.box-10 {
+    background: #d3869b;
+}
+
+.box-11 {
+    background: #689d6a;
+}
+
+.box-12 {
+    background: #8ec07c;
+}
+
+
+
+/* Utilities */
+
+.shadow-1 {
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.4);
+}
+
+
+/* Flexbox grid system */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+}
+
+.col-11 {
+    flex: 0 0 calc(100% / 12 * 11);
+}
+
+.col-10 {
+    flex: 0 0 calc(100% / 12 * 10);
+}
+
+.col-9 {
+    flex: 0 0 calc(100% / 12 * 9);
+}
+
+.col-8 {
+    flex: 0 0 calc(100% / 12 * 8);
+}
+
+.col-7 {
+    flex: 0 0 calc(100% / 12 * 7);
+}
+
+.col-6 {
+    flex: 0 0 calc(100% / 12 * 6);
+}
+
+.col-5 {
+    flex: 0 0 calc(100% / 12 * 5);
+}
+
+.col-4 {
+    flex: 0 0 calc(100% / 12 * 4);
+}
+
+.col-3 {
+    flex: 0 0 calc(100% / 12 * 3);
+}
+
+.col-2 {
+    flex: 0 0 calc(100% / 12 * 2);
+}
+
+.col-1 {
+    flex: 0 0 calc(100% /12 * 1);
+}
+
+
+
+
+/* Cards */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #282828;
+    margin: 0 10px 10px;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: justify;
+}
+
+.card-action {
+    border-top: 1px solid #282828;
+    padding: 20px 15px 25px;
+}
 
 
 
 /* Buttons */
 
-
-/* Headings */
-
-.display-1 {
-    margin-bottom: 28px;
-    font-size: 52px;
-    font-weight: 800;
+.btn {
+    background: #282828;
+    color: #ebdbb2;
+    padding: 5px 20px;
+    border: none;
+    height: 30px;
+    cursor: pointer;
 }
 
-.lead {
-    font-size: 24px;
+.btn-blue {
+    background: #83a588;
 }
 
-
-
-/* Text colors */
-
-.text-dark-red {color: #cc241d;}
-
-.text-dark-cyan {color: #689d6a;}
-
-
-/* Utils: background colors */
-
-.bg-primary {
-    background-color: #8ec07c;
+.btn-dark-blue {
+    background: #458588;
 }
 
-.bg-dark {
-    background-color: #282828;
+.btn-dark-green {
+    background: #98971a;
+}
+
+.btn-green {
+    background: #b8bb26;
+}
+
+.btn-red {
+    background: #fb4934;
+    color: #ebdbb2;
+    padding: 5px 20px;
+}
+
+.btn-dark-red {
+    background: #cc241d; 
     color: #ebdbb2;
 }
 
 
 
-/* Layout */
+/* Form */
 
-.container {
-    max-width: 80%;
-    margin: auto;
+.form-group {
+    display: flex;
+    flex-direction: column;
 }
 
-.section {
-    margin: 10px 0;
+.form-group label {
+    color: #928374;
+    font-size: 12px;
+    margin: 10px 0 5px;
+}
+
+
+
+/* Hero */
+
+.hero {
+    height: 50vh;
+    width: 100%;
 }
 
 .hero .hero-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    padding: 0 50px;
-    height: 100vh;
+    align-items: center;
+    height: 100%;
 }
 
-
-
-/* Components */
-
-.navbar {
-    display: flex;
-    position: fixed;
-    height: 70px;
-    width: 100%;
+.hero .hero-content .hero-title {
+    font-size: 48px;
 }
 
-.navbar a {
-    color: #ebdbb2;
-    padding: 10px 20px;
-    margin: 0 5px;
+.hero .hero-content p {
+    font-weight: 500;
 }
-
-.navbar a:hover {
-    border-bottom: 1px #ebdbb2 solid;
-    width: 30px;
-}
-
-.navbar ul {
-    display: flex;
-    text-transform: uppercase;
-}
-
-.btn {
-    background-color: #689d6a;
-    color: #ebdbb2;
-    margin: 25px 0;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-weight: 400;
-    border: none;
-}
-
-
-
-

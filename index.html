@@ -3,58 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/gruv.css">
-    <link rel="stylesheet" href="./css/custom.css">
-    <title>Gruv CSS</title>
+    <link rel="stylesheet" href="css/gruv.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <title>CSS Flexbox</title>
 </head>
-<body class="bg-dark">
+<body class="">
+
     <header>
-        <div class="hero bg-dark">
-            <!-- Navbar -->
-            <div class="navbar">
-                <div class="container">
-                <nav>
-                    <ul>
-                        <li><a href="">Docs</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="">Showcase</a></li>
-                    </ul>
-                </nav>
-                </div>
-            </div>
-            <!--  Hero Content -->
+        <div class="hero">
             <div class="hero-content">
-                <h1 class="display-1"><span class="text-dark-cyan">Gruv</span> CSS</h1>
-                <p class="lead">A simple responsive css framework inspired by the 'retro groove' <a href="https://github.com/morhetz/gruvbox">Gruvbox</a> colorscheme</p>
-                <a href="" class="btn">Github</a>
+                <h1 class="hero-title">Gruv CSS</h1>
+                <p>Retro colored CSS Framework inspired by Gruvbox</p>
             </div>
         </div>
     </header>
-
+    
     <div class="container">
-        <section id="about-section" class="section">
-            <h1 id="about">About</h1>
-            <p>Gruv CSS is a minimal and responsive CSS framework based on the popular colorscheme, gruvbox. Gruv CSS started out as a personal project because I relied too much on 3rd party css frameworks like Bootstrap, Bulma and Materialize. I wanted something that was more in line with my personal taste when it comes to design and color use.</p> 
+        <!-- About -->
+        <section>
+            <h1>About</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum aperiam, facilis possimus id sed quo saepe. Quaerat eaque ipsa, explicabo doloribus accusantium nihil sunt repellendus sed sint blanditiis tempora, minus iste dolores iusto. Reiciendis, beatae? Est recusandae facere sed obcaecati.</p>
+        </section>
 
-            <p>The Gruvbox colorscheme has been my all time favorite colorscheme. I use for my browser, filemanager, terminal and wherever I can.</p>
+        <!-- Grid System -->
+        <section>
+            <h2>Grid</h2>
+            <p>Gruv CSS uses flexbox for the 12 column grid system.</p>
+            <div class="row">
+                <div class="box box-1 col-1">box 1</div>
+                <div class="box box-2 col-2">box 2</div>
+                <div class="box box-3 col-3">box 3</div>
+                <div class="box box-4 col-4">box 4</div>
+                <div class="box box-5 col-5">box 5</div>
+                <div class="box box-6 col-6">box 6</div>
+                <div class="box box-7 col-7">box 7</div>
+                <div class="box box-8 col-8">box 8</div>
+                <div class="box box-9 col-9">box 9</div>
+                <div class="box box-10 col-10">box 10</div>
+                <div class="box box-11 col-11">box 11</div>
+                <div class="box box-12 col-12">box 12</div>
+            </div>
         </section>
+        
+        <!-- Buttons -->
+        <section>
+            
+            <h2>Buttons</h2>
+            <p>There is nothing complicated going on here. Buttons can simply be applied with the <span class="inline-code">.btn</span> class. The aim is to keep a flat design that fits the colorscheme.</p>
+            <code class="code-example">
+                &lt;button class="btn"&gt;Press Me&lt;/button&gt;
+                <br>
+                &lt;button class="btn btn-cyan"&gt;Cyan&lt;/button&gt;
+            </code>
+
+            <div class="buttons-container">
+                <button class="btn">Default</button>
+                <button class="btn btn-blue">blue-btn</button>
+                <button class="btn btn-dark-blue">btn-dark-blue</button>
+                <button class="btn btn-dark-green">btn-dark-green</button>
+                <button class="btn btn-green">btn-green</button>
+                <button class="btn btn-dark-red">btn-dark-red</button>
+                <button class="btn btn-red">btn-red</button>
+                <button class="btn btn-dark-yellow">btn-dark-yellow</button>
+                <button class="btn btn-yellow">btn-yellow</button>
+                <button class="btn btn-dark-magenta">btn-dark-magenta</button>
+                <button class="btn btn-magenta">btn-magenta</button>
+                <button class="btn btn-dark-cyan">btn-dark-cyan</button>
+            </div>
+
+        </section>
+        
+        <!-- Cards -->
         <section class="section">
-            <h1>Utilities</h1>
-            <h2>Colors</h2>
+            <h2>Cards</h2>
+
+            <p>
+            Cards can be used to display any kind of information. You can use to it display products, blog posts and more.
+            </p>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="card shadow-1">
+                        <div class="card-img">
+                            <img src="img/man-in-tokyo.jpg" alt="" srcset="">
+                        </div>
+                        <div class="card-content">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam omnis doloremque tenetur culpa. Saepe, modi.
+                        </div>
+                        <div class="card-action">
+                            <a href="" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                <div class="card shadow-1">
+                     <div class="card-img">
+                         <img src="img/tokyo2.jpg" alt="">
+                     </div>
+                     <div class="card-content">
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, tenetur. Necessitatibus a rem culpa velit accusantium quidem veritatis dolorum maxime?
+                     </div>
+                 </div> 
+            </div>
         </section>
-        <section class="section">
-            <h1>Layout</h1>
+
+        <!-- Forms -->
+        <section>
+            <h2>Forms</h2>
+
+            <p>
+            On any given website, you will probably need to use a form somewhere. So far Gruv CSS only has some simple styling for labels and inputs.
+            </p>
+            
+            <h3>Input fields</h3>
+            <p>
+            The input tag is field used in forms to receive user data. In order to achieve the proper styling, add the <span class="inline-code">.form-group</span> class inside the form. This will stack the elements inside of it.
+            </p>
+            <form action="">
+                <div class="form-wrapper">
+                    <div class="form-group">
+                        <label for="">Firstname</label>
+                        <input type="text" name="firstname" id="">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Lastname</label>
+                        <input type="text" name="lastname" id="">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="text" name="email" id="">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input type="password" name="password1" id="">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Confirm password</label>
+                        <input type="password" name="password2" id="">
+                    </div>
+                </div>
+            </form>
         </section>
-        <section class="section">
-            <h1>Components</h1>
-            <h2>Headings</h2>
-            <h1>This is a heading one</h1>
-            <h2>This is a heading two</h2>
-            <h3>This is a heading three</h3>
-            <h4>This is a heading four</h4>
-            <h5>This is a heading five</h5>
-            <h6>This is a heading six</h6>
-        </section>
-    </div> 
+
+        </div>    
 </body>
 </html>
